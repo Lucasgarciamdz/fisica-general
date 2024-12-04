@@ -180,6 +180,151 @@ Donde:
 
 Estas fórmulas son fundamentales para entender el movimiento circular y la dinámica de los objetos que se mueven en trayectorias curvas.
 
+# Movimiento Circular Uniforme (M.C.U.)
+
+El Movimiento Circular Uniforme es aquel en el que un objeto se desplaza a lo largo de una trayectoria circular con velocidad tangencial constante. En este tipo de movimiento, ciertas magnitudes mantienen una constancia que facilita su análisis.
+
+## Características del M.C.U.
+
+1. **Velocidad Angular Constante ($\omega$):**
+    - La velocidad angular del objeto permanece constante durante su movimiento.
+    - Se describen ángulos centrales iguales en tiempos iguales.
+    - **Unidad:** radianes por segundo (rad/s)
+
+2. **Velocidad Tangencial Constante ($v$):**
+    - El módulo de la velocidad tangencial del objeto no varía.
+    - Se relaciona con la velocidad angular y el radio:
+      $$
+      v = \omega \cdot r
+      $$
+    - **Unidad:** metros por segundo (m/s)
+
+3. **Aceleración Centrípeta Constante ($a_c$):**
+    - La aceleración centrípeta mantiene constante la dirección del vector velocidad tangencial.
+    - Calculada como:
+      $$
+      a_c = \frac{v^2}{r} = \omega^2 \cdot r
+      $$
+    - **Unidad:** metros por segundo al cuadrado (m/s²)
+
+4. **Fuerza Centrípeta Constante ($F_c$):**
+    - Fuerza necesaria para mantener el objeto en movimiento circular.
+    - Calculada mediante la segunda ley de Newton:
+      $$
+      F_c = m \cdot a_c = m \cdot \frac{v^2}{r} = m \cdot \omega^2 \cdot r
+      $$
+    - **Unidad:** Newton (N)
+
+5. **Periodo de Rotación ($T$):**
+    - Tiempo que tarda el objeto en completar una vuelta completa.
+    - Relación con la velocidad angular:
+      $$
+      T = \frac{2\pi}{\omega} = \frac{2\pi \cdot r}{v}
+      $$
+    - **Unidad:** segundos (s)
+
+## Ejemplo: Satélite en Órbita Circular
+
+Consideremos un satélite que orbita la Tierra a una distancia de $r = 7 \times 10^6_{\scriptsize {m}}$ con una velocidad tangencial de $v = 7.5 \times 10^3_{\scriptsize {m/s}}$. Calculamos su periodo de rotación y la fuerza centrípeta necesaria para mantener su órbita.
+
+1. **Periodo ($T$):**
+
+$$
+T = \frac{2\pi r}{v} = \frac{2\pi \times 7 \times 10^6_{\scriptsize {m}}}{7.5 \times 10^3_{\scriptsize {m/s}}} \approx 5880_{\scriptsize {s}} \approx 1.63_{\scriptsize {horas}}
+$$
+
+2. **Fuerza Centrípeta ($F_c$):**
+
+Si la masa del satélite es $m = 500_{\scriptsize {kg}}$,
+
+$$
+F_c = m \cdot \frac{v^2}{r} = 500_{\scriptsize {kg}} \cdot \frac{(7.5 \times 10^3_{\scriptsize {m/s}})^2}{7 \times 10^6_{\scriptsize {m}}} \approx 403571.43_{\scriptsize {N}}
+$$
+
+Este ejemplo muestra cómo se aplican las fórmulas del Movimiento Circular Uniforme para determinar características clave de un satélite en órbita.
+## Movimiento Circular Uniformemente Variado (M.C.U.V.)
+
+El Movimiento Circular Uniformemente Variado se caracteriza por un cambio en la velocidad angular del objeto en movimiento. A diferencia del Movimiento Circular Uniforme (M.C.U.), en el M.C.U.V. la velocidad angular no permanece constante, lo que provoca variaciones en otras magnitudes relacionadas.
+
+### Características del M.C.U.V.
+
+1. **Velocidad Angular Variable ($\omega$):**
+    - La velocidad angular cambia con el tiempo.
+    - **Unidad:** radianes por segundo (rad/s).
+
+2. **Aceleración Angular ($\alpha$):**
+    - Representa el cambio en la velocidad angular.
+    - **Unidad:** radianes por segundo al cuadrado (rad/s²).
+    - **Fórmula:**
+      $$
+      \alpha = \frac{d\omega}{dt}
+      $$
+
+3. **Velocidad Tangencial Variable ($v$):**
+    - La velocidad tangencial varía debido al cambio en la velocidad angular.
+    - **Relación con la velocidad angular:**
+      $$
+      v = \omega \cdot r
+      $$
+    - **Unidad:** metros por segundo (m/s).
+
+4. **Aceleración Centrípeta Variable ($a_c$):**
+    - Depende de la velocidad tangencial, por lo que varía con el tiempo.
+    - **Fórmula:**
+      $$
+      a_c = \frac{v^2}{r} = \omega^2 \cdot r
+      $$
+    - **Unidad:** metros por segundo al cuadrado (m/s²).
+
+5. **Aceleración Tangencial ($a_t$):**
+    - Causa el cambio en la velocidad tangencial.
+    - **Relación con la aceleración angular:**
+      $$
+      a_t = \alpha \cdot r
+      $$
+    - **Unidad:** metros por segundo al cuadrado (m/s²).
+
+6. **Fuerza Centrípeta Variable ($F_c$):**
+    - Necesaria para mantener el objeto en movimiento circular.
+    - **Fórmula:**
+      $$
+      F_c = m \cdot a_c = m \cdot \omega^2 \cdot r
+      $$
+    - **Unidad:** Newton (N).
+
+### Ejemplo: Satélite en Órbita con Movimiento Uniformemente Variado
+
+Consideremos un satélite que orbita la Tierra cuya velocidad angular está aumentando de manera constante debido a una fuerza externa. Supongamos que:
+
+- **Radio de la órbita:** $r = 7 \times 10^6 \, \text{m}$
+- **Velocidad angular inicial:** $\omega_0 = 1 \, \text{rad/s}$
+- **Aceleración angular:** $\alpha = 0.1 \, \text{rad/s²}$
+- **Masa del satélite:** $m = 500 \, \text{kg}$
+
+1. **Velocidad Angular en el Tiempo $t$:**
+    $$
+    \omega(t) = \omega_0 + \alpha \cdot t = 1 + 0.1t \, \text{rad/s}
+    $$
+
+2. **Velocidad Tangencial en el Tiempo $t$:**
+    $$
+    v(t) = \omega(t) \cdot r = (1 + 0.1t) \cdot 7 \times 10^6 = 7 \times 10^6 + 7 \times 10^5 t \, \text{m/s}
+    $$
+
+3. **Aceleración Centrípeta en el Tiempo $t$:**
+    $$
+    a_c(t) = \omega(t)^2 \cdot r = (1 + 0.1t)^2 \cdot 7 \times 10^6 \, \text{m/s²}
+    $$
+
+4. **Fuerza Centrípeta en el Tiempo $t$:**
+    $$
+    F_c(t) = m \cdot a_c(t) = 500 \cdot (1 + 0.1t)^2 \cdot 7 \times 10^6 \, \text{N}
+    $$
+
+Este ejemplo ilustra cómo, al aumentar la velocidad angular, se modifican la velocidad tangencial, la aceleración centrípeta y la fuerza centrípeta necesarias para mantener la órbita del satélite.
+
+
+
 ## Conceptos
 
 ### Velocidad Angular

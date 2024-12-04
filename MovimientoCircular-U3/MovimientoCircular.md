@@ -101,59 +101,63 @@ La fórmula para la aceleración centrípeta es:
 
 $\ a_c$ = $\frac{v^2}{r}$
 
-### Deducción de la aceleración centrípeta
+### Deducción de la Aceleración Centrípeta
 
-En base a la identidad trigonométrica de los triángulos, se puede deducir la fórmula de la aceleración centrípeta vectorialmente como:
+Para deducir la fórmula de la aceleración centrípeta, consideremos las relaciones geométricas y las definiciones de velocidad y aceleración en movimiento circular.
 
-Consideremos un triángulo isósceles con lados iguales $v$ y base $\Delta v$. Este triángulo es similar a otro triángulo isósceles formado por el arco $\Delta s$ y el radio $r$ de la circunferencia. La relación entre estos triángulos se puede expresar como:
+Consideremos un triángulo isósceles donde los lados iguales representan la velocidad tangencial $v$ y la base representa el cambio en la velocidad $\Delta v$. Este triángulo es similar a otro triángulo formado por el arco $\Delta s$ y el radio $r$ de la circunferencia. Por lo tanto, las proporciones entre sus lados son iguales:
 
-$\ [ \frac{\Delta v}{v} = \frac{\Delta s}{r} ]$
+$$
+\frac{\vec{\Delta v}}{v} = \frac{\Delta s}{r}
+$$
 
-El cambio en la velocidad $\Delta v$ es perpendicular a la velocidad tangencial y se puede relacionar con el cambio en el ángulo:
+Despejando $\vec{\Delta v}$:
 
-$\ [ \frac{\Delta v}{v} = \frac{\Delta s}{r} ]$
+$$
+\vec{\Delta v} = v \cdot \frac{\Delta s}{r}
+$$
 
-Despejando $\Delta v$:
+La velocidad angular $\omega$ se relaciona con la longitud del arco mediante:
 
-$\ [ \Delta v = v \frac{\Delta s}{r} ]$
+$$
+\omega = \frac{\Delta \theta}{\Delta t}
+\\
+\frac {\text{longitud del arco}}{\text{radio}} =
+\Delta \theta = \omega \Delta t = \frac{\Delta s}{r}
+$$
 
+Sustituyendo en la ecuación de $\Delta v$ para t = 0:
 
+$$
+\vec{\Delta v} = v \cdot \omega t
+$$
 
-La aceleración centrípeta es la aceleración media:
+La aceleración centrípeta $a_c$ es la aceleración media, definida como:
 
-$\ [ a_c = \frac{\Delta v}{\Delta t} = {\frac{v^2 \Delta t}{r}}{\Delta t} = \frac{v^2}{r} ]$
+$$
+a_c = \frac{\vec{\Delta v}}{\Delta t} = \frac{v \cdot \omega t}{t} = v \cdot \omega
+$$
 
-Otra forma de expresar la aceleración centrípeta es en términos de la velocidad angular $\omega$:
+Usando la relación $v = \omega r$, obtenemos:
 
-$\ [ v = \omega r ]$
-
-Sustituyendo en la fórmula de la aceleración centrípeta:
-
-$\ [ a_c = \frac{(\omega r)^2}{r} = \omega^2 r ]$
+$$
+a_c = \frac{v^2}{r} = \omega^2 r
+$$
 
 Por lo tanto, la aceleración centrípeta se puede expresar como:
 
-$\ [ a_c = \frac{v^2}{r} ]$
-
-o
-
-$\ [ a_c = \omega^2 r ]$
+$$
+a_c = \frac{v^2}{r} \quad \text{o} \quad a_c = \omega^2 r
+$$
 
 Estas deducciones muestran cómo la aceleración centrípeta depende de la velocidad tangencial y el radio de la trayectoria circular.
 
+**Donde:**
 
-donde:
-- $\ a_c$ es la aceleración centrípeta.
-- $\ v$ es la velocidad tangencial del objeto.
-- $\ r$ es el radio de la trayectoria circular.
-
-Otra forma de expresar la aceleración centrípeta es en términos de la velocidad angular $\\omega$ $\):
-
-$\ a_c$ = $\omega^2 r$ 
-
-donde:
-- $\ \omega$ es la velocidad angular.
-- $\ r$ es el radio de la trayectoria circular.
+- $a_c$ es la aceleración centrípeta.
+- $v$ es la velocidad tangencial del objeto.
+- $r$ es el radio de la trayectoria circular.
+- $\omega$ es la velocidad angular.
 
 La fuerza centrípeta $\ F_c$ necesaria para mantener un objeto en movimiento circular se puede calcular usando la segunda ley de Newton:
 

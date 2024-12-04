@@ -1,164 +1,126 @@
-# Fórmulas de Cinemática
+# **Fórmulas de Cinemática**
 
-## Tabla de Unidades
-| Símbolo | Unidad          |
-|---------|-----------------|
-| $\Delta x$ | metros (\text{\tiny m})    |
-| $\Delta t$ | segundos (\text{\tiny s})  |
-| $v_{\text{prom}}$ | metros/segundo (\text{\tiny m/s}) |
-| $v(t)$ | metros/segundo (\text{\tiny m/s}) |
-| $s$ | metros (\text{\tiny m}) |
-| $a_{\text{prom}}$ | metros/segundo² (\text{\tiny m/s²}) |
-| $a(t)$ | metros/segundo² (\text{\tiny m/s²}) |
-| $\vec{r}(t)$ | metros (\text{\tiny m}) |
-| $\Delta \vec{r}$ | metros (\text{\tiny m}) |
-| $g$ | metros/segundo² (\text{\tiny m/s²}) |
-| $v_0$ | metros/segundo (\text{\tiny m/s}) |
-| $\theta$ | grados (\text{\tiny °}) |
-| $T$ | segundos (\text{\tiny s}) |
-| $H_m$ | metros (\text{\tiny m}) |
-| $\Delta x$ | metros (\text{\tiny m}) |
+### **Tabla de Unidades**
+| **Símbolo**       | **Unidad**               | **Descripción**          |
+|-------------------|--------------------------|--------------------------|
+| $\Delta x$        | metros ($\text{m}$)       | Desplazamiento           |
+| $\Delta t$        | segundos ($\text{s}$)     | Intervalo de tiempo      |
+| $v_{\text{prom}}$ | metros/segundo ($\text{m/s}$) | Velocidad promedio   |
+| $v(t)$            | metros/segundo ($\text{m/s}$) | Velocidad instantánea  |
+| $s$               | metros ($\text{m}$)       | Distancia recorrida      |
+| $a_{\text{prom}}$ | metros/segundo² ($\text{m/s}^2$) | Aceleración promedio |
+| $a(t)$            | metros/segundo² ($\text{m/s}^2$) | Aceleración instantánea |
+| $\vec{r}(t)$      | metros ($\text{m}$)       | Vector de posición       |
+| $\Delta \vec{r}$  | metros ($\text{m}$)       | Vector de desplazamiento |
+| $g$               | metros/segundo² ($\text{m/s}^2$) | Aceleración gravitatoria |
+| $v_0$             | metros/segundo ($\text{m/s}$) | Velocidad inicial      |
+| $\theta$          | grados ($^\circ$)         | Ángulo de lanzamiento    |
+| $T$               | segundos ($\text{s}$)     | Tiempo de vuelo          |
+| $H_m$             | metros ($\text{m}$)       | Altura máxima            |
 
-## Desplazamiento
-$$
-\Delta x_{ \, (\text{\tiny m})} = x_f \, (\text{\tiny m}) - x_i \, (\text{\tiny m})
-$$
+---
 
-## Velocidad Promedio
+## **1. Desplazamiento**
 $$
-v_{\text{prom}} \, \left(\frac{\text{\tiny m}}{\text{\tiny s}}\right) = \frac{\Delta x \, (\text{\tiny m})}{\Delta t \, (\text{\tiny s})}
+\Delta x \, (\text{\small m}) = x_f \, (\text{\small m}) - x_i \, (\text{\small m})
 $$
 
-## Velocidad Instantánea
+---
+
+## **2. Velocidad Promedio**
 $$
-v(t) \, \left(\frac{\text{\tiny m}}{\text{\tiny s}}\right) = \frac{dx}{dt} \, \left(\frac{\text{\tiny m}}{\text{\tiny s}}\right)
+v_{\text{prom}} \, \left(\frac{\text{\small m}}{\text{\small s}}\right) = \frac{\Delta x \, (\text{\small m})}{\Delta t \, (\text{\small s})}
 $$
 
-## Rapidez Media
+---
+
+## **3. Velocidad Instantánea**
 $$
-\text{Rapidez media} \, \left(\frac{\text{\tiny m}}{\text{\tiny s}}\right) = \frac{s \, (\text{\tiny m})}{\Delta t \, (\text{\tiny s})}
+v(t) \, \left(\frac{\text{\small m}}{\text{\small s}}\right) = \frac{dx}{dt} \, \left(\frac{\text{\small m}}{\text{\small s}}\right)
 $$
 
-## Aceleración Promedio
+---
+
+## **4. Aceleración Promedio**
 $$
-a_{\text{prom}} \, \left(\frac{\text{\tiny m}}{\text{\tiny s}^2}\right) = \frac{\Delta v \, \left(\frac{\text{\tiny m}}{\text{\tiny s}}\right)}{\Delta t \, (\text{\tiny s})} = \frac{v_f \, \left(\frac{\text{\tiny m}}{\text{\tiny s}}\right) - v_i \, \left(\frac{\text{\tiny m}}{\text{\tiny s}}\right)}{t_f \, (\text{\tiny s}) - t_i \, (\text{\tiny s})}
+a_{\text{prom}} \, \left(\frac{\text{\small m}}{\text{\small s}^2}\right) = \frac{\Delta v \, \left(\frac{\text{\small m}}{\text{\small s}}\right)}{\Delta t \, (\text{\small s})}
 $$
 
-## Aceleración Instantánea
+---
+
+## **5. Aceleración Instantánea**
 $$
-a(t) \, \left(\frac{\text{\tiny m}}{\text{\tiny s}^2}\right) = \frac{dv}{dt} \, \left(\frac{\text{\tiny m}}{\text{\tiny s}^2}\right)
+a(t) \, \left(\frac{\text{\small m}}{\text{\small s}^2}\right) = \frac{dv}{dt} \, \left(\frac{\text{\small m}}{\text{\small s}^2}\right)
 $$
 
-## Vector Posición
+---
+
+## **6. Movimiento Rectilíneo Uniforme (MRU)**
+### **Posición en Función del Tiempo**
 $$
-\vec{r}(t) \, (\text{\tiny m}) = x(t) \, (\text{\tiny m})\hat{i} + y(t) \, (\text{\tiny m})\hat{j} + z(t) \, (\text{\tiny m})\hat{k}
+x(t) \, (\text{\small m}) = x_0 \, (\text{\small m}) + v \, \left(\frac{\text{\small m}}{\text{\small s}}\right) t \, (\text{\small s})
 $$
 
-## Vector Desplazamiento
+---
+
+## **7. Movimiento Rectilíneo Uniformemente Variado (MRUV)**
+
+### **Ecuación Horaria**
 $$
-\Delta \vec{r} \, (\text{\tiny m}) = \vec{r}_f \, (\text{\tiny m}) - \vec{r}_i \, (\text{\tiny m})
+x(t) \, (\text{\small m}) = x_0 \, (\text{\small m}) + v_0 \, \left(\frac{\text{\small m}}{\text{\small s}}\right) t \, (\text{\small s}) + \frac{1}{2} a \, \left(\frac{\text{\small m}}{\text{\small s}^2}\right) t^2 \, (\text{\small s}^2)
 $$
 
-## Distancia Recorrida
+### **Velocidad en Función del Tiempo**
 $$
-s \, (\text{\tiny m}) = \int_{t_i \, (\text{\tiny s})}^{t_f \, (\text{\tiny s})} |\vec{v}(t) \, \left(\frac{\text{\tiny m}}{\text{\tiny s}}\right)| dt \, (\text{\tiny s})
-$$
-
-## Movimiento Rectilíneo Uniforme (MRU)
-$$
-x(t) \, (\text{\tiny m}) = x_0 \, (\text{\tiny m}) + v \, \left(\frac{\text{\tiny m}}{\text{\tiny s}}\right) t \, (\text{\tiny s})
+v(t) \, \left(\frac{\text{\small m}}{\text{\small s}}\right) = v_0 \, \left(\frac{\text{\small m}}{\text{\small s}}\right) + a \, \left(\frac{\text{\small m}}{\text{\small s}^2}\right) t \, (\text{\small s})
 $$
 
-## Movimiento Rectilíneo Uniformemente Variado (MRUV)
-
-### Ecuación Horaria
+### **Velocidad en Función de la Posición**
 $$
-x(t) \, (\text{\tiny m}) = x_0 \, (\text{\tiny m}) + v_0 \, \left(\frac{\text{\tiny m}}{\text{\tiny s}}\right) t \, (\text{\tiny s}) + \frac{1}{2} a \, \left(\frac{\text{\tiny m}}{\text{\tiny s}^2}\right) t^2 \, (\text{\tiny s}^2)
+v^2 \, \left(\frac{\text{\small m}^2}{\text{\small s}^2}\right) = v_0^2 \, \left(\frac{\text{\small m}^2}{\text{\small s}^2}\right) + 2 a \, \left(\frac{\text{\small m}}{\text{\small s}^2}\right) (x \, (\text{\small m}) - x_0 \, (\text{\small m}))
 $$
 
-### Velocidad en Función del Tiempo
+---
+
+## **8. Caída Libre**
+
+### **Posición en Función del Tiempo**
 $$
-v(t) \, \left(\frac{\text{\tiny m}}{\text{\tiny s}}\right) = v_0 \, \left(\frac{\text{\tiny m}}{\text{\tiny s}}\right) + a \, \left(\frac{\text{\tiny m}}{\text{\tiny s}^2}\right) t \, (\text{\tiny s})
+y(t) \, (\text{\small m}) = y_0 \, (\text{\small m}) - \frac{1}{2} g \, \left(\frac{\text{\small m}}{\text{\small s}^2}\right) t^2 \, (\text{\small s}^2)
 $$
 
-### Velocidad en Función de la Posición
+### **Velocidad en Función del Tiempo**
 $$
-v^2 \, \left(\frac{\text{\tiny m}^2}{\text{\tiny s}^2}\right) = v_0^2 \, \left(\frac{\text{\tiny m}^2}{\text{\tiny s}^2}\right) + 2 a \, \left(\frac{\text{\tiny m}}{\text{\tiny s}^2}\right) (x \, (\text{\tiny m}) - x_0 \, (\text{\tiny m}))
-$$
-
-## Caída Libre (CL)
-
-### Posición en Función del Tiempo
-$$
-y(t) \, (\text{\tiny m}) = y_0 \, (\text{\tiny m}) - \frac{1}{2} g \, \left(\frac{\text{\tiny m}}{\text{\tiny s}^2}\right) t^2 \, (\text{\tiny s}^2)
+v(t) \, \left(\frac{\text{\small m}}{\text{\small s}}\right) = v_0 \, \left(\frac{\text{\small m}}{\text{\small s}}\right) - g \, \left(\frac{\text{\small m}}{\text{\small s}^2}\right) t \, (\text{\small s})
 $$
 
-### Velocidad en Función del Tiempo
+---
+
+## **9. Tiro Parabólico**
+
+### **Ecuaciones de Movimiento**
+1. **Eje Horizontal**: 
+   $$
+   x(t) \, (\text{\small m}) = v_0 \cos(\theta) \, \left(\frac{\text{\small m}}{\text{\small s}}\right) t \, (\text{\small s})
+   $$
+2. **Eje Vertical**:
+   $$
+   y(t) \, (\text{\small m}) = v_0 \sin(\theta) \, \left(\frac{\text{\small m}}{\text{\small s}}\right) t \, (\text{\small s}) - \frac{1}{2} g \, \left(\frac{\text{\small m}}{\text{\small s}^2}\right) t^2 \, (\text{\small s}^2)
+   $$
+
+### **Velocidad Total**
 $$
-v(t) \, \left(\frac{\text{\tiny m}}{\text{\tiny s}}\right) = -g \, \left(\frac{\text{\tiny m}}{\text{\tiny s}^2}\right) t \, (\text{\tiny s})
+v(t) \, \left(\frac{\text{\small m}}{\text{\small s}}\right) = \sqrt{v_x^2 + v_y^2}
 $$
 
-### Ecuación de los Cuadrados
-$$
-v^2 \, \left(\frac{\text{\tiny m}^2}{\text{\tiny s}^2}\right) = v_0^2 \, \left(\frac{\text{\tiny m}^2}{\text{\tiny s}^2}\right) + 2 g \, \left(\frac{\text{\tiny m}}{\text{\tiny s}^2}\right) (y \, (\text{\tiny m}) - y_0 \, (\text{\tiny m}))
-$$
+---
 
-## Tiro Vertical (TV)
+## **10. Fórmulas Clave del Tiro Parabólico**
 
-### Posición en Función del Tiempo
-$$
-y(t) \, (\text{\tiny m}) = y_0 \, (\text{\tiny m}) + v_0 \, \left(\frac{\text{\tiny m}}{\text{\tiny s}}\right) t \, (\text{\tiny s}) - \frac{1}{2} g \, \left(\frac{\text{\tiny m}}{\text{\tiny s}^2}\right) t^2 \, (\text{\tiny s}^2)
-$$
+| **Variable**          | **Fórmula**                                                                 |
+|------------------------|-----------------------------------------------------------------------------|
+| **Tiempo de vuelo**    | \( T = \frac{2 v_0 \sin(\theta)}{g} \, (\text{\small s}) \)                 |
+| **Alcance horizontal**| \( \Delta x = \frac{v_0^2 \sin(2\theta)}{g} \, (\text{\small m}) \)          |
+| **Altura máxima**      | \( H_m = \frac{v_0^2 \sin^2(\theta)}{2g} \, (\text{\small m}) \)            |
 
-### Velocidad en Función del Tiempo
-$$
-v(t) \, \left(\frac{\text{\tiny m}}{\text{\tiny s}}\right) = v_0 \, \left(\frac{\text{\tiny m}}{\text{\tiny s}}\right) - g \, \left(\frac{\text{\tiny m}}{\text{\tiny s}^2}\right) t \, (\text{\tiny s})
-$$
-
-### Ecuación de los Cuadrados
-$$
-v^2 \, \left(\frac{\text{\tiny m}^2}{\text{\tiny s}^2}\right) = v_0^2 \, \left(\frac{\text{\tiny m}^2}{\text{\tiny s}^2}\right) - 2 g \, \left(\frac{\text{\tiny m}}{\text{\tiny s}^2}\right) (y \, (\text{\tiny m}) - y_0 \, (\text{\tiny m}))
-$$
-
-## Tiro Parabólico
-
-### Posición en el Eje Horizontal
-$$
-x(t) \, (\text{\tiny m}) = v_0 \cos(\theta) \, \left(\frac{\text{\tiny m}}{\text{\tiny s}}\right) t \, (\text{\tiny s})
-$$
-
-### Posición en el Eje Vertical
-$$
-y(t) \, (\text{\tiny m}) = v_0 \sin(\theta) \, \left(\frac{\text{\tiny m}}{\text{\tiny s}}\right) t \, (\text{\tiny s}) - \frac{1}{2} g \, \left(\frac{\text{\tiny m}}{\text{\tiny s}^2}\right) t^2 \, (\text{\tiny s}^2)
-$$
-
-### Velocidad en el Eje Horizontal
-$$
-v_x(t) \, \left(\frac{\text{\tiny m}}{\text{\tiny s}}\right) = v_0 \cos(\theta) \, \left(\frac{\text{\tiny m}}{\text{\tiny s}}\right)
-$$
-
-### Velocidad en el Eje Vertical
-$$
-v_y(t) \, \left(\frac{\text{\tiny m}}{\text{\tiny s}}\right) = v_0 \sin(\theta) \, \left(\frac{\text{\tiny m}}{\text{\tiny s}}\right) - g \, \left(\frac{\text{\tiny m}}{\text{\tiny s}^2}\right) t \, (\text{\tiny s})
-$$
-
-### Velocidad Total
-$$
-v(t) \, \left(\frac{\text{\tiny m}}{\text{\tiny s}}\right) = \sqrt{ \left( v_0 \cos(\theta) \, \left(\frac{\text{\tiny m}}{\text{\tiny s}}\right) \right)^2 + \left( v_0 \sin(\theta) \, \left(\frac{\text{\tiny m}}{\text{\tiny s}}\right) - g \, \left(\frac{\text{\tiny m}}{\text{\tiny s}^2}\right) t \, (\text{\tiny s}) \right)^2 }
-$$
-
-### Tiempos de Vuelo
-$$
-T \, (\text{\tiny s}) = \frac{2 v_0 \sin(\theta) \, \left(\frac{\text{\tiny m}}{\text{\tiny s}}\right)}{g \, \left(\frac{\text{\tiny m}}{\text{\tiny s}^2}\right)}
-$$
-
-### Alcance Horizontal
-$$
-\Delta x \, (\text{\tiny m}) = \frac{v_0^2 \sin(2\theta)}{g \, \left(\frac{\text{\tiny m}}{\text{\tiny s}^2}\right)} \, (\text{\tiny m})
-$$
-
-### Altura Máxima
-$$
-H_m \, (\text{\tiny m}) = \frac{v_0^2 \sin^2(\theta) \, \left(\frac{\text{\tiny m}^2}{\text{\tiny s}^2}\right)}{2g \, \left(\frac{\text{\tiny m}}{\text{\tiny s}^2}\right)} \, (\text{\tiny m})
-$$
-
+---

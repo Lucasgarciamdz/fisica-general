@@ -154,94 +154,10 @@ relación con su entorno. Solo las fuerzas conservativas pueden asociarse con un
 > $$
 > U_g = P.h = m.g.h
 > $$
-
-
-### **2.5. Niveles de Referencia para la Energía Potencial Gravitatoria**
-
-En situaciones donde las distancias son astronómicas, es conveniente definir la energía potencial gravitatoria con un nivel de referencia en el infinito, es decir, $U(\infty) = 0$. El trabajo necesario para mover una partícula de masa $m$ desde el infinito hasta una distancia $r$ de una masa gravitatoria $M$ es:
-
-$$
-W = -\int_{\infty}^{r} \vec{F} \cdot d\vec{r}
-$$
-
-Donde:
-- $\vec{F}$ es la fuerza gravitatoria entre las masas $m$ y $M$.
-- $d\vec{r}$ es un desplazamiento infinitesimal en la dirección radial.
-
-La fuerza gravitatoria está dada por:
-
-$$
-\vec{F} = - G \frac{m M}{r^2} \hat{r}
-$$
-
-Donde:
-- $G$ es la constante de gravitación universal.
-- $r$ es la distancia desde la masa $M$.
-- $\hat{r}$ es el vector unitario radial apuntando hacia afuera de $M$.
-
-Al sustituir $\vec{F}$ en la expresión del trabajo, obtenemos:
-
-$$
-W = -\int_{\infty}^{r} \left( - G \frac{m M}{r'^2} \hat{r} \right) \cdot d\vec{r}'
-$$
-
-Aquí, usamos $r'$ como variable de integración para distinguirla de $r$.
-
-Como $d\vec{r}'$ y $\hat{r}$ tienen la misma dirección (radial), su producto escalar es:
-
-$$
-\hat{r} \cdot d\vec{r}' = dr'
-$$
-
-Entonces, la expresión del trabajo se simplifica a:
-
-$$
-W = -\int_{\infty}^{r} \left( - G \frac{m M}{r'^2} \right) dr'
-$$
-
-Simplificando los signos negativos:
-
-$$
-W = \int_{\infty}^{r} G \frac{m M}{r'^2} dr'
-$$
-
-Procedemos a calcular la integral:
-
-1. **Extraemos las constantes:**
-
-  $$
-  W = G m M \int_{\infty}^{r} \frac{dr'}{r'^2}
-  $$
-
-2. **Calculamos la integral indefinida:**
-
-  $$
-  \int \frac{dr'}{r'^2} = -\frac{1}{r'}
-  $$
-
-3. **Aplicamos los límites de integración:**
-
-  $$
-  W = G m M \left[ -\frac{1}{r'} \right]_{\infty}^{r} = G m M \left( -\frac{1}{r} - \left( -\frac{1}{\infty} \right) \right)
-  $$
-
-4. **Simplificamos teniendo en cuenta que $\frac{1}{\infty} = 0$:**
-
-  $$
-  W = G m M \left( -\frac{1}{r} - 0 \right) = -\frac{G m M}{r}
-  $$
-
-Por lo tanto, el trabajo realizado es:
-
-$$
-W = -\frac{G m M}{r}
-$$
-
-Este trabajo es igual al cambio en la energía potencial gravitatoria, por lo que la energía potencial en función de $r$ es:
-
-$$
-U(r) = -\frac{G m M}{r}
-$$
+>
+> $$
+> U_g = -\frac{G.m_1.m_2}{r}
+> $$
 
 **Interpretación:**
 
@@ -258,6 +174,80 @@ Esta fórmula es esencial para calcular los requerimientos energéticos en viaje
 
 Esto permite diseñar trayectorias y maniobras orbitales eficientes en exploración espacial.
 
+### ** 2.5 Energia mecanica**
+
+> **Definición:** La energía mecánica $(E)$ de un sistema es la suma de su energía cinética y su energía potencial:
+
+$$
+E = K + U
+$$
+
+> **Teorema de la Conservación de la Energía Mecánica:** En un sistema aislado, la energía mecánica total se conserva, es decir, la suma de la energía cinética y la energía potencial permanece constante:
+
+$$
+E_i = E_f
+$$
+
+> **Demostración:**
+> 
+> Consideremos un sistema aislado donde solo actúan fuerzas conservativas. Según el teorema del trabajo y la energía cinética, el trabajo realizado por las fuerzas conservativas es igual al cambio en la energía cinética:
+> 
+> $$
+> W = \Delta K
+> $$
+> 
+> Por otro lado, el trabajo realizado por una fuerza conservativa también es igual al negativo del cambio en la energía potencial:
+> 
+> $$
+> W = -\Delta U
+> $$
+> 
+> Igualando ambas expresiones, obtenemos:
+> 
+> $$
+> \Delta K = -\Delta U
+> $$
+> 
+> Esto implica que:
+> 
+> $$
+> \Delta K + \Delta U = 0
+> $$
+> 
+> O, de manera equivalente:
+> 
+> $$
+> K_f - K_i + U_f - U_i = 0
+> $$
+> 
+> Reordenando los términos, tenemos:
+> 
+> $$
+> K_i + U_i = K_f + U_f
+> $$
+> 
+> Por lo tanto, la energía mecánica total inicial $(E_i)$ es igual a la energía mecánica total final $(E_f)$:
+> 
+> $$
+> E_i = E_f
+> $$
+> 
+> Esto demuestra que en un sistema aislado, la energía mecánica total se conserva.
+
+#### **Fuerzas conservativas**
+
+- Las fuerzas conservativas son aquellas que no dependen de la trayectoria seguida por un objeto.
+
+- Ejemplos de fuerzas conservativas incluyen la fuerza gravitatoria, la fuerza elástica y la fuerza eléctrica.
+- Las fuerzas conservativas están asociadas con energías potenciales, lo que permite aplicar el teorema de la conservación de la energía mecánica.
+
+#### **Fuerzas no conservativas**
+
+- Las fuerzas no conservativas son aquellas que dependen de la trayectoria seguida por un objeto.
+
+- Ejemplos de fuerzas no conservativas incluyen la fricción y la resistencia del aire.
+
+> El trabajo neto de las fuerzas exteriores no conservativas ($W_{neto}$) aplicadas sobre un sistema es igual a la variación de la energía mecánica que experimenta el sistema.
 
 ### **2.6. Potencia**
 

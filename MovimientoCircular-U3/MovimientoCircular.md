@@ -101,12 +101,53 @@ La fórmula para la aceleración centrípeta es:
 
 $\ a_c$ = $\frac{v^2}{r}$
 
+### Deducción de la aceleración centrípeta
+
+En base a la identidad trigonométrica de los triángulos, se puede deducir la fórmula de la aceleración centrípeta vectorialmente como:
+
+Consideremos un triángulo isósceles con lados iguales $v$ y base $\Delta v$. Este triángulo es similar a otro triángulo isósceles formado por el arco $\Delta s$ y el radio $r$ de la circunferencia. La relación entre estos triángulos se puede expresar como:
+
+$\ [ \frac{\Delta v}{v} = \frac{\Delta s}{r} ]$
+
+El cambio en la velocidad $\Delta v$ es perpendicular a la velocidad tangencial y se puede relacionar con el cambio en el ángulo:
+
+$\ [ \frac{\Delta v}{v} = \frac{\Delta s}{r} ]$
+
+Despejando $\Delta v$:
+
+$\ [ \Delta v = v \frac{\Delta s}{r} ]$
+
+
+
+La aceleración centrípeta es la aceleración media:
+
+$\ [ a_c = \frac{\Delta v}{\Delta t} = {\frac{v^2 \Delta t}{r}}{\Delta t} = \frac{v^2}{r} ]$
+
+Otra forma de expresar la aceleración centrípeta es en términos de la velocidad angular $\omega$:
+
+$\ [ v = \omega r ]$
+
+Sustituyendo en la fórmula de la aceleración centrípeta:
+
+$\ [ a_c = \frac{(\omega r)^2}{r} = \omega^2 r ]$
+
+Por lo tanto, la aceleración centrípeta se puede expresar como:
+
+$\ [ a_c = \frac{v^2}{r} ]$
+
+o
+
+$\ [ a_c = \omega^2 r ]$
+
+Estas deducciones muestran cómo la aceleración centrípeta depende de la velocidad tangencial y el radio de la trayectoria circular.
+
+
 donde:
 - $\ a_c$ es la aceleración centrípeta.
 - $\ v$ es la velocidad tangencial del objeto.
 - $\ r$ es el radio de la trayectoria circular.
 
-Otra forma de expresar la aceleración centrípeta es en términos de la velocidad angular \( $\omega$ \):
+Otra forma de expresar la aceleración centrípeta es en términos de la velocidad angular $\\omega$ $\):
 
 $\ a_c$ = $\omega^2 r$ 
 
@@ -140,22 +181,24 @@ Estas fórmulas son fundamentales para entender el movimiento circular y la din�
 ### Velocidad Angular
 La velocidad angular ($\Omega$) es una medida de la rapidez con la que un objeto gira o rota. Se define como el ángulo barrido por unidad de tiempo.
 
-\[ \omega = \frac{\Delta \theta}{\Delta t} \]
+$\ \omega = \frac{\Delta \theta}{\Delta t}$
 
 ### Aceleración Centripeta
-La aceleración centrípeta (\(a_c\)) es la aceleración que mantiene a un objeto en su trayectoria circular. Siempre apunta hacia el centro del círculo.
+La aceleración centrípeta ($\ a_c$) es la aceleración que mantiene a un objeto en su trayectoria circular. Siempre apunta hacia el centro del círculo.
 
-\[ a_c = \frac{v^2}{r} \]
+$\ a_c = \frac{v^2}{r}$
 
 ### Fuerza Centripeta
-La fuerza centrípeta (\(F_c\)) es la fuerza que actúa sobre un objeto en movimiento circular, dirigiéndolo hacia el centro de la trayectoria circular.
+La fuerza centrípeta ($\ F_c$) es la fuerza que actúa sobre un objeto en movimiento circular, dirigiéndolo hacia el centro de la trayectoria circular.
 
-\[ F_c = m \cdot a_c = m \cdot \frac{v^2}{r} \]
+$\ F_c = m \cdot a_c = m \cdot \frac{v^2}{r}$
 
 ## Ejemplos Comunes
 - Movimiento de los planetas alrededor del sol.
 - Movimiento de un automóvil en una curva.
 - Movimiento de una rueda de bicicleta.
 
-## Referencias
-- Serway, R. A., & Jewett, J. W. (2014). *Physics for Scientists and Engineers*. Cengage Learning.
+# Movimiento Circular Uniformemente Variado
+
+## Introducción
+

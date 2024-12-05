@@ -1,5 +1,10 @@
 # Capacidad eléctrica, capacitores
 
+## Condensadores
+
+Los condensadores de un circuito electrónico cumplen la función de almacenamiento 
+y estabilización de la corriente eléctrica
+
 ## Capacitores y Capacitancia
 
 Un **capacitor** es un dispositivo que almacena energía eléctrica en forma de campo eléctrico. Consiste en dos conductores separados por un material aislante o dieléctrico.
@@ -44,8 +49,8 @@ Cuando varios capacitores se conectan en **serie**, la carga eléctrica (\( Q \)
 
 ### Paso 1: Comprender la Configuración en Serie
 
-- **Carga en cada capacitor**: \( Q_1 = Q_2 = Q_3 = \dotsb = Q \)
-- **Diferencia de potencial total**: \( V_{\text{total}} = V_1 + V_2 + V_3 + \dotsb \)
+- **Carga en cada capacitor**: $\ ( Q_1 = Q_2 = Q_3 = \dotsb = Q )$
+- **Diferencia de potencial total**: $\ ( V_{\text{total}} = V_1 + V_2 + V_3 + \dotsb )$
 
 ### Paso 2: Relacionar Capacitancia y Voltaje en Cada Capacitor
 

@@ -66,15 +66,10 @@ La resistencia interna provoca que el voltaje disponible para el circuito dismin
 La ley de Ohm establece que la corriente que circula por un conductor es directamente proporcional a la diferencia de potencial aplicada y es inversamente proporcional a la resistencia del conductor:
 
 $$
-\text{"Viva Independiente Rivadavia" }
-\\
-\Delta V = I \, R \quad \text{o} \quad I = \frac{\Delta V}{R}
+\Delta V = I \, R \quad \text{(V = A  · $\Omega$)} \\
+I = \frac{\Delta V}{R} \quad \text{(A = V / $\Omega$)} \\
+R = \frac{\Delta V}{I} \quad \text{($\Omega$ = V / A)}
 $$
-
-Donde:
-- $\Delta V$ es la diferencia de potencial en voltios ($\text{V}$).
-- $I$ es la corriente en amperios ($\text{A}$).
-- $R$ es la resistencia en ohmios ($\Omega$).
 
 ## Potencia eléctrica
 

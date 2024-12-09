@@ -204,9 +204,62 @@ $$
 
 ## Energía de un Capacitor
 
-La energía almacenada ($U$) en un capacitor cargado es:
+La energía potencial eléctrica almacenada en un capacitor cargado es exactamente igual a la 
+cantidad de trabajo requerido para cargarlo, osea para separar cargas opuestas y colocarlas 
+en los diferentes conductores. Cuando el capacitor se descarga, esta energía almacenada se 
+recupera en forma de trabajo realizado por las fuerzas eléctricas.
 
+La energía almacenada ($U$) en un capacitor cargado se puede deducir paso a paso de la siguiente manera:
+
+### Paso 1: Definir el Trabajo Necesario para Mover una Carga
+
+El trabajo diferencial ($dU$) necesario para mover una carga diferencial ($dq$) a través de un diferencial de voltaje ($dV$) es:
+
+$$ dU = V \, dq $$
+
+### Paso 2: Expresar el Voltaje en Términos de la Carga
+
+Despejamos $V$ de la ecuación de la capacitancia:
+
+$$ V = \frac{Q}{C} $$
+
+### Paso 3: Sustituir el Voltaje en la Energía Diferencial
+
+Sustituimos $V$ en la ecuación de la energía diferencial:
+
+$$ dU = \frac{Q}{C} \, dq $$
+
+### Paso 4: Integrar para Encontrar la Energía Total
+
+Integramos ambos lados para encontrar la energía total almacenada en el capacitor:
+
+$$ U = \int_0^Q \frac{Q'}{C} \, dQ' $$
+
+Donde $Q'$ es una variable de integración que representa la carga.
+
+### Paso 6: Realizar la Integración
+
+La integral se resuelve como:
+
+$$ U = \frac{1}{C} \int_0^Q Q' \, dQ' = \frac{1}{C} \left[ \frac{(Q')^2}{2} \right]_0^Q = \frac{1}{C} \left( \frac{Q^2}{2} - 0 \right) = \frac{Q^2}{2C} $$
+
+### Paso 7: Expresar la Energía en Términos del Voltaje
+
+Usamos la relación $Q = C \, V$ para expresar la energía en términos del voltaje:
+
+$$ U = \frac{(C \, V)^2}{2C} = \frac{C \, V^2}{2} $$
+
+### Unidades en el Sistema Internacional
+
+- Energía ($U$): Joules (J)
+- Capacitancia ($C$): Faradios (F)
+- Voltaje ($V$): Voltios (V)
+
+La fórmula final para la energía almacenada en un capacitor es con sus distintas formas usando la relación $Q = C \, V$:
+
+$$ U = \frac{Q^2}{2C} $$
 $$ U = \frac{1}{2} C V^2 $$
+$$ U = \frac{1}{2} Q V $$
 
 Esta energía se almacena en el campo eléctrico existente entre las placas del capacitor.
 
@@ -222,6 +275,63 @@ Donde:
 - $\kappa$ es la **constante dieléctrica** del material (también denominada permitividad relativa).
   
 El dieléctrico aumenta la capacitancia en un factor de $\kappa$ comparado con el mismo capacitor en el vacío.
+
+### Efectos de Agregar o Quitar un Dieléctrico en un Capacitor
+
+La inserción o remoción de un dieléctrico en un capacitor puede ocurrir con la batería conectada o desconectada. Esto afecta las magnitudes eléctricas del capacitor de diferentes maneras.
+
+#### Caso 1: Batería Conectada y se Agrega un Dieléctrico
+
+- **Voltaje ($V$)**: Permanece constante (igual al voltaje de la batería).
+- **Capacitancia ($C$)**: Aumenta en un factor de $\kappa$ ($C' = \kappa C$).
+- **Carga ($Q$)**: Aumenta ($Q' = C' V = \kappa C V = \kappa Q$).
+- **Campo Eléctrico ($E$)**: Disminuye ($E' = \dfrac{E}{\kappa}$).
+- **Energía Almacenada ($U$)**: Aumenta ($U' = \dfrac{1}{2} C' V^2 = \kappa U$).
+
+*Explicación*: Al agregar un dieléctrico, la capacitancia aumenta. Como el voltaje se mantiene constante por la batería, el capacitor almacena más carga, incrementando la energía almacenada.
+
+#### Caso 2: Batería Conectada y se Quita el Dieléctrico
+
+- **Voltaje ($V$)**: Permanece constante.
+- **Capacitancia ($C$)**: Disminuye ($C' = \dfrac{C}{\kappa}$).
+- **Carga ($Q$)**: Disminuye ($Q' = C' V = \dfrac{C V}{\kappa} = \dfrac{Q}{\kappa}$).
+- **Campo Eléctrico ($E$)**: Aumenta ($E' = \kappa E$).
+- **Energía Almacenada ($U$)**: Disminuye ($U' = \dfrac{1}{2} C' V^2 = \dfrac{U}{\kappa}$).
+
+*Explicación*: Al remover el dieléctrico, la capacitancia disminuye. La batería mantiene el voltaje constante, por lo que el capacitor libera carga, reduciendo la energía almacenada.
+
+#### Caso 3: Batería Desconectada y se Agrega un Dieléctrico
+
+- **Carga ($Q$)**: Permanece constante (no hay camino para que la carga cambie).
+- **Capacitancia ($C$)**: Aumenta ($C' = \kappa C$).
+- **Voltaje ($V$)**: Disminuye ($V' = \dfrac{Q}{C'} = \dfrac{V}{\kappa}$).
+- **Campo Eléctrico ($E$)**: Disminuye ($E' = \dfrac{E}{\kappa}$).
+- **Energía Almacenada ($U$)**: Disminuye ($U' = \dfrac{1}{2} Q V' = \dfrac{U}{\kappa}$).
+
+*Explicación*: Sin conexión a la batería, la carga se mantiene. Al aumentar la capacitancia con el dieléctrico, el voltaje disminuye, al igual que la energía almacenada.
+
+#### Caso 4: Batería Desconectada y se Quita el Dieléctrico
+
+- **Carga ($Q$)**: Permanece constante.
+- **Capacitancia ($C$)**: Disminuye ($C' = \dfrac{C}{\kappa}$).
+- **Voltaje ($V$)**: Aumenta ($V' = \dfrac{Q}{C'} = \kappa V$).
+- **Campo Eléctrico ($E$)**: Aumenta ($E' = \kappa E$).
+- **Energía Almacenada ($U$)**: Disminuye ($U' = \dfrac{1}{2} Q V' = \kappa U$).
+  
+*Explicación*: Al quitar el dieléctrico, la capacitancia disminuye. Sin conexión a la batería, el voltaje aumenta, reduciendo la energía almacenada.
+
+
+---
+
+**Resumen de los Casos**
+
+| Situación                              | $V$            | $C$                   | $Q$                | $E$              | $U$                |
+|----------------------------------------|----------------|-----------------------|--------------------|------------------|--------------------|
+| Batería conectada, agrega dieléctrico  | Constante      | Aumenta ($\kappa C$)  | Aumenta ($\kappa Q$) | Disminuye ($E/\kappa$) | Aumenta ($\kappa U$) |
+| Batería conectada, quita dieléctrico   | Constante      | Disminuye ($C/\kappa$) | Disminuye ($Q/\kappa$) | Aumenta ($\kappa E$) | Disminuye ($U/\kappa$) |
+| Batería desconectada, agrega dieléctrico | Disminuye ($V/\kappa$) | Aumenta ($\kappa C$)  | Constante         | Disminuye ($E/\kappa$) | Disminuye ($U/\kappa$) |
+| Batería desconectada, quita dieléctrico | Aumenta ($\kappa V$) | Disminuye ($C/\kappa$) | Constante         | Aumenta ($\kappa E$) | Disminuye ($\kappa U$) |
+
 
 ## Cuadro con Constantes Dieléctricas
 
@@ -259,3 +369,84 @@ En presencia de un campo eléctrico externo, los dieléctricos se polarizan:
 Esta polarización crea campos eléctricos internos que se oponen al campo externo, reduciendo el campo eléctrico neto dentro del dieléctrico y aumentando la capacitancia del capacitor.
 
 ---
+
+## Trabajo al Insertar o Remover un Dieléctrico en un Capacitor
+
+El proceso de insertar o remover un dieléctrico en un capacitor implica la realización de trabajo, ya sea por parte de una fuente externa o entregado al sistema. Este trabajo depende de si el capacitor está conectado o desconectado de una batería.
+
+### Caso 1: Capacitor Conectado a una Batería
+
+#### a) Insertar un Dieléctrico
+
+- **Voltaje ($V$):** Se mantiene constante debido a la batería.
+- **Capacitancia ($C$):** Aumenta a $C' = \kappa C$.
+- **Carga ($Q$):** Aumenta a $Q' = C' V = \kappa C V$.
+- **Energía Inicial ($U$):** $U = \dfrac{1}{2} C V^2$.
+- **Energía Final ($U'$):** $U' = \dfrac{1}{2} C' V^2 = \dfrac{1}{2} \kappa C V^2$.
+
+**Trabajo Realizado ($W$):**
+
+El trabajo realizado por la batería es igual al incremento en la energía almacenada:
+
+$$
+W = U' - U = \dfrac{1}{2} \kappa C V^2 - \dfrac{1}{2} C V^2 = \dfrac{1}{2} C V^2 (\kappa - 1)
+$$
+
+**Unidades:**
+
+- $C$ en Faradios (F)
+- $V$ en Voltios (V)
+- $W$ en Joules (J)
+
+#### b) Remover un Dieléctrico
+
+- **Capacitancia Final ($C'$):** Disminuye a $C' = \dfrac{C}{\kappa}$.
+- **Carga Final ($Q'$):** Disminuye a $Q' = C' V = \dfrac{C V}{\kappa}$.
+- **Energía Final ($U'$):** $U' = \dfrac{1}{2} C' V^2 = \dfrac{1}{2} \dfrac{C}{\kappa} V^2$.
+
+**Trabajo Realizado ($W$):**
+
+$$
+W = U' - U = \dfrac{1}{2} \dfrac{C}{\kappa} V^2 - \dfrac{1}{2} C V^2 = -\dfrac{1}{2} C V^2 \left( 1 - \dfrac{1}{\kappa} \right)
+$$
+
+El trabajo es negativo, indicando que la energía es devuelta a la batería.
+
+### Caso 2: Capacitor Desconectado de una Batería
+
+#### a) Insertar un Dieléctrico
+
+- **Carga ($Q$):** Permanece constante.
+- **Capacitancia ($C$):** Aumenta a $C' = \kappa C$.
+- **Voltaje Final ($V'$):** Disminuye a $V' = \dfrac{Q}{C'} = \dfrac{V}{\kappa}$.
+- **Energía Inicial ($U$):** $U = \dfrac{1}{2} C V^2$.
+- **Energía Final ($U'$):** $U' = \dfrac{1}{2} C' V'^2 = \dfrac{1}{2} \kappa C \left( \dfrac{V}{\kappa} \right)^2 = \dfrac{1}{2} \dfrac{C V^2}{\kappa}$.
+
+**Trabajo Realizado ($W$):**
+
+$$
+W = U' - U = \dfrac{1}{2} \dfrac{C V^2}{\kappa} - \dfrac{1}{2} C V^2 = -\dfrac{1}{2} C V^2 \left( 1 - \dfrac{1}{\kappa} \right)
+$$
+
+El trabajo es negativo, lo que significa que el sistema realiza trabajo externo.
+
+#### b) Remover un Dieléctrico
+
+- **Capacitancia Final ($C'$):** Disminuye a $C' = \dfrac{C}{\kappa}$.
+- **Voltaje Final ($V'$):** Aumenta a $V' = \dfrac{Q}{C'} = \kappa V$.
+- **Energía Final ($U'$):** $U' = \dfrac{1}{2} C' V'^2 = \dfrac{1}{2} \dfrac{C}{\kappa} (\kappa V)^2 = \dfrac{1}{2} \kappa C V^2$.
+
+**Trabajo Realizado ($W$):**
+
+$$
+W = U' - U = \dfrac{1}{2} \kappa C V^2 - \dfrac{1}{2} C V^2 = \dfrac{1}{2} C V^2 (\kappa - 1)
+$$
+
+El trabajo es positivo, indicando que se requiere trabajo externo para remover el dieléctrico.
+
+### Verificación de Unidades en el Sistema Internacional
+
+Considerando $C$ en Faradios (F), $V$ en Voltios (V), y $\kappa$ adimensional:
+
+- **Energía ($U$, $U'$):** Joules (J), ya que $1\, \text{F} \times (\text{V})^2 = \text{Coulomb}/\text{Volt} \times \text{Volt}^2 = \text{Coulomb} \times \text{Volt} = \text{Joule}$.
+- **Trabajo ($W$):** Joules (J), dado que es la diferencia de energías.

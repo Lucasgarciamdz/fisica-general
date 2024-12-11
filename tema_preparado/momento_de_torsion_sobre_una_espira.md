@@ -1,3 +1,25 @@
+## Contextualización
+
+agrega esto primero para saber de donde se deduce: 19.2.1. Fuerza sobre una corriente eléctrica
+
+Pero... ¿Y si en vez de una sola partícula tenemos varias moviéndose?, esto es como preguntarse por la fuerza que experimentaría, debido al magnetismo, una corriente eléctrica. Para ello vamos a suponer una corriente eléctrica y tomar un elemento diferencial de ella. Si diferenciamos (19.1) tendremos que, como sólo la carga $q$ va a variar
+
+$$
+d\mathbf{F} = dq(\mathbf{v} \times \mathbf{B}),
+$$
+
+pero habrá que calcular cuánto puede ser este $dq$. Partiendo de la definición de intensidad para una corriente eléctrica, $I = \frac{dq}{dt}$ y sustituyendo $dq$ tendremos que
+
+$$
+d\mathbf{F} = I \, d\mathbf{l} \times \mathbf{B}.
+$$
+
+Por último, recordando que en un circuito la intensidad, por la ley de Ohm, depende sólo de la diferencia de potencial y la resistencia de dicho circuito y podemos considerarla por tanto constante, tendremos que para un conductor finito:
+
+$$
+\mathbf{F} = I \int d\mathbf{l} \times \mathbf{B}.
+$$
+
 # Momento de torsión sobre una espira de corriente en un campo magnético uniforme
 
 ## Introducción
@@ -106,4 +128,3 @@ $$
 $$
 
 Por lo tanto, el torque ejercido sobre la espira es de $0.225 \, \text{N}·\text{m}$.
-

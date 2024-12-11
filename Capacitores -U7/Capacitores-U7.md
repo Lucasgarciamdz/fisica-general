@@ -450,3 +450,5 @@ Considerando $C$ en Faradios (F), $V$ en Voltios (V), y $\kappa$ adimensional:
 
 - **Energía ($U$, $U'$):** Joules (J), ya que $1\, \text{F} \times (\text{V})^2 = \text{Coulomb}/\text{Volt} \times \text{Volt}^2 = \text{Coulomb} \times \text{Volt} = \text{Joule}$.
 - **Trabajo ($W$):** Joules (J), dado que es la diferencia de energías.
+
+
